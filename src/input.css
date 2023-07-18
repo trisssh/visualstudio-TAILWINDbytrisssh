@@ -6,6 +6,17 @@
     @apply mx-auto max-w-[1200px] w-full;
 }
 
+@layer components {
+    .header__nav{
+        @apply w-[100vw] h-[0vh] absolute left-0 flex-col justify-start items-start overflow-hidden;
+    }
+
+    .header__nav.open{
+        @apply h-[100vh];
+    }
+
+    
+}
 
 
 
