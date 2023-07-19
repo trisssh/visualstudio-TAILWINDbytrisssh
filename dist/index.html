@@ -8,22 +8,75 @@
     <link rel="stylesheet" href="./output.css">
 
     <title>Visual Studio by Trisha S.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- <section class="header">
+        <div class="container">
+            <nav class="">
+                <div class="VSlogo flex gap-3 p-3">
+                <a href="#"><img src="/images/logo-vs.png" width="25" height="25" /></a>
+                    <h3 class="font-semibold text-xl">Visual Studio Code</h3>
+                </div>
 
-    <section class="banner bg-[#2c2c32]">
-        <div class="container text-white">
-            <header>
-                <nav class="flex justify-between px-4">
-                    <div class="VSlogo flex gap-3 p-3">
-                        <a href="#"><img src="/images/logo-vs.png" width="25" height="25" /></a>
-                        <h3 class="font-semibold text-xl">Visual Studio Code</h3>
+                <div class="header__nav lg:static lg:h-auto">
+                    <ul class="flex flex-col justify-end lg:flex-row gap-4">                       
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Updates</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Extensions</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Learn</a></li>
+    
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Download</a></li>
+                    </ul>
+                </div>
+            
+                <div class="pt-2">
+                   
+
+                    <div class="hover:bg-[#0066B8] hover:cursor-pointer px-3 pt-3 py-2 rounded-md">
+                        <button class="toggle-menu flex flex-col border-none self-center background-transparent z-50 lg:hidden">
+                            <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
+                            <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
+                            <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
+
+                        </button>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </section> -->
+    <header class="header bg-black lg:px-40">
+        <div class="container ">
+            <nav class="header__wrapper flex justify-between lg:inline-flex  px-3">
+
+                <!-- <div class="branding__header gap-2 m-2 ">
+                    <a href="#"><img src="/images/logo-vs.png" width="25" height="25" /></a>
+                    <h3 class="font-semibold text-xl text-white">Visual Studio Code</h3>
+                </div> -->
+
+                <div class="VSlogo flex whitespace-nowrap gap-2 p-2 lg:flex-none">
+                    <div>
+                        <a class="lg:height-[52rem] lg:width-[52rem]" href="#"><img src="/images/logo-vs.png" width="25"
+                                height="25" /></a>
                     </div>
 
-                    <div class="header__nav lg:static lg:h-auto">
-                        <ul class="flex flex-col justify-end lg:flex-row gap-4">                       
+                    <div class="">
+                        <h3 class="font-semibold text-xl text-white whitespace-nowrap">Visual Studio Code</h3>
+                    </div>
+
+                </div>
+
+                <div class="header__nav lg:static lg:h-auto">
+
+                    <ul class="lg:flex lg:justify-between lg:gap-5 bg-black gap-1 p-3 text-gray-400 ">
+                        <div class="lg:flex gap-2">
                             <li><a href="#">Docs</a></li>
                             <li><a href="#">Updates</a></li>
                             <li><a href="#">Blog</a></li>
@@ -31,34 +84,54 @@
                             <li><a href="#">Extensions</a></li>
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Learn</a></li>
-
-                            <li><a href="#">Search</a></li>
-                            <li><a href="#">Download</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="pt-2">
-                        <!-- <a href="#"><img src="/images/icon-search.svg" alt="">Search Docs</a>
-                        <a href="#"><img src="/images/icon-cart.svg" alt="">Download</a> -->
-
-                        <div class="hover:bg-[#0066B8] hover:cursor-pointer px-3 pt-3 py-2 rounded-md">
-                            <button class="toggle-menu flex flex-col border-none self-center background-transparent z-50 lg:hidden">
-                                <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
-                                <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
-                                <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
-            
-                            </button>
                         </div>
-                        
-                    </div>
-                </nav>
-            </header>
 
-            <div class="update bg-[#25252B] px-9 py-2">
-                <h3 class="text-center"><a href="#" class="px-1 text-blue-500 underline hover:no-underline">Version 1.80</a>
-                    is now available! Read about the new features and
-                    fixes from June.</h3>
-            </div>
+                        <div class="header__dalwa flex gap-2">
+                            <li>
+
+                                <div
+                                    class="py-2  btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] px-4 text-white text-center">
+                                    <h3 class="text-base font-extralight flex justify-center gap-2"> <img
+                                            src="/images/search (1).svg" width="17" height="17" />Search Docs</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div
+                                    class="py-2  btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] px-4 text-white text-center">
+                                    <h3 class="text-base font-semibold flex justify-center gap-2"> <img
+                                            src="/images/dl-iconWHITE.svg" width="17" height="17" />Download</h3>
+                                </div>
+                            </li>
+                        </div>
+
+                    </ul>
+
+                </div>
+
+                <button
+                    class="toggle-menu flex flex-col  border-none self-center background-transparent z-50 lg:hidden hover:bg-[#0066B8] hover:cursor-pointer px-3 pt-3 py-2 rounded-md">
+                    <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
+                    <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
+                    <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
+
+                </button>
+
+            </nav>
+        </div>
+    </header>
+
+
+
+    <div class="update bg-[#25252B] px-9 py-2">
+        <h3 class="text-center text-white"><a href="#" class="px-1 text-blue-500 underline hover:no-underline">Version
+                1.80</a>
+            is now available! Read about the new features and
+            fixes from June.</h3>
+    </div>
+
+    <section class="banner bg-[#2c2c32]">
+        <div class="container text-white">
+
 
             <div role="main" id="main-content" class="px-4 py-1 lg:flex lg:flex-cols-2 lg:justify-evenly">
 
@@ -68,23 +141,21 @@
                     <h2 class="font-medium p-1 text-4xl">Redefined.</h2>
                     <p class="text-gray-400 p-2">Free. Built on open source. Runs everywhere.</p>
 
-                    <div class="btn">
-                        <a href="#">
-                            <p></p>
-                            <h6></h6>
-                        </a>
-                        <a href="#">v</a>
-                    </div>
-                    
-                    <div class="flex justify-center p-4">
+
+                    <div class="flex justify-center p-4 gap-1">
                         <div
-                        class="py-2  btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] w-60 h-14 text-white text-center">
-                        <h3 class="text-base font-semibold flex justify-center gap-2"> <img
-                                src="/images/dl-iconWHITE.svg" width="17" height="17" />Download for Windows</h3>
-                        <p class="text-xs pb-2">Stable Build</p>
+                            class="py-2  btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] w-60 h-14 text-white text-center">
+                            <h3 class="text-base font-semibold flex justify-center gap-2"> <img
+                                    src="/images/dl-iconWHITE.svg" width="17" height="17" />Download for Windows</h3>
+                            <p class="text-xs pb-2">Stable Build</p>
+                        </div>
+                        <div
+                            class="py-2 btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] w-10 h-14 text-white text-center">
+                            <h3 class="text-base font-semibold flex justify-center gap-2"><i
+                                    class="pt-[11px] fa-solid fa-chevron-down text-xl"></i></h3>
                         </div>
                     </div>
-                    
+
 
                     <h6 class="text-sm bg-violet-950 text-gray-400">
                         <a href="#" class="text-blue-500 hover:underline no-underline">Web,</a>
@@ -92,12 +163,13 @@
                         or<a href="#" class="text-blue-500 hover:underline no-underline"> other plans</a>
                     </h6>
 
-                        <h5 class="text-xs text-gray-400 p-3">
-                            By using VS Code, you agree to its<div><a href="#" class="text-blue-500 hover:underline no-underline">
-                            license and privacy statement</a>.</div>
-                        </h5>
-                 
-                    
+                    <h5 class="text-xs text-gray-400 p-3">
+                        By using VS Code, you agree to its<div><a href="#"
+                                class="text-blue-500 hover:underline no-underline">
+                                license and privacy statement</a>.</div>
+                    </h5>
+
+
 
                 </div>
 
@@ -114,20 +186,20 @@
     <section class="valueprops">
         <div class="container">
             <div class="grid grid-cols-2  lg:flex lg:justify-evenly gap-3 px-9">
-                <div class="text-center p-4 lg:px-20 lg:py-8 hover:bg-gray-200 cursor-pointer">
-                    <i class="fa-regular fa-lightbulb text-5xl text-slate-800  hover:text-violet-900"></i>
+                <div class="group text-center p-4 lg:px-20 lg:py-8 hover:bg-gray-200 cursor-pointer">
+                    <i class="fa-regular fa-lightbulb text-5xl text-slate-800  group-hover:text-violet-900"></i>
                     <h3 class="p-1 text-lg">IntelliSense</h3>
                 </div>
-                <div class="text-center p-4 lg:px-20 lg:py-8 hover:bg-gray-200 cursor-pointer">
-                    <i class="fa-solid fa-bug text-5xl text-slate-800 hover:text-green-600"></i>
+                <div class="group text-center p-4 lg:px-20 lg:py-8 hover:bg-gray-200 cursor-pointer">
+                    <i class="fa-solid fa-bug text-5xl text-slate-800 group-hover:text-green-600"></i>
                     <h3 class="p-1 text-lg">Run and Debug</h3>
                 </div>
-                <div class="text-center p-4 lg:px-20 lg:py-8 hover:bg-gray-200 cursor-pointer">
-                    <i class="fa-solid fa-code-branch text-5xl text-slate-800 hover:text-red-500"></i>
+                <div class="group text-center p-4 lg:px-20 lg:py-8 hover:bg-gray-200 cursor-pointer">
+                    <i class="fa-solid fa-code-branch text-5xl text-slate-800 group-hover:text-red-500"></i>
                     <h3 class="p-1 text-lg">Built-in Git</h3>
                 </div>
-                <div class="text-center p-4 lg:px-20 lg:py-8 hover:bg-gray-200 cursor-pointer">
-                    <i class="fa-solid fa-cubes text-5xl text-slate-800 hover:text-black"></i>
+                <div class="group text-center p-4 lg:px-20 lg:py-8 hover:bg-gray-200 cursor-pointer">
+                    <i class="fa-solid fa-cubes text-5xl text-slate-800 group-hover:text-black"></i>
                     <h3 class="p-1 text-lg">Extensions</h3>
                 </div>
             </div>
@@ -183,77 +255,227 @@
         </div>
     </section>
 
+
+    <!-- <div class="my-slider">
+        <div>
+            <div class="__content">
+                <img class="rounded" src="/images/person-4.jpg" width="60" height="60" />
+
+                <div class="__comments">
+                    <a class="hover:text-blue-400" href="#">
+                        <h5>Una Kravets</h5>
+                        <h6>@una</h6>
+                    </a>
+
+                    <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing
+                        workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                </div>
+            </div>
+
+            <div class="__content">
+                <img src="https://via.placeholder.com/60x60" alt="">
+
+                <div class="__comments">
+                    <a class="hover:text-blue-400" href="#">
+                        <h5>Jonathan Dunlap</h5>
+                        <h6>@jadbox</h6>
+                    </a>
+
+                    <p>VS Code will have deep remote development. You can connect to a container running a different
+                        OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                </div>
+            </div>
+
+            <div class="__content">
+                <img src="https://via.placeholder.com/60x60" alt="">
+
+                <div class="__comments">
+                    <a class="hover:text-blue-400" href="#">
+                        <h5>Pavithra Kodmad</h5>
+                        <h6>@PKodmad</h6>
+                    </a>
+
+                    <p>VS Code is my most used and favorite editor. I love being able to customize the editor -
+                        changing the layout, the icons, fonts and color scheme is so easy!</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="__content">
+                <img class="rounded" src="/images/person-4.jpg" width="60" height="60" />
+
+                <div class="__comments">
+                    <a class="hover:text-blue-400" href="#">
+                        <h5>Una Kravets</h5>
+                        <h6>@una</h6>
+                    </a>
+
+                    <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing
+                        workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                </div>
+            </div>
+
+            <div class="__content">
+                <img src="https://via.placeholder.com/60x60" alt="">
+
+                <div class="__comments">
+                    <a class="hover:text-blue-400" href="#">
+                        <h5>Jonathan Dunlap</h5>
+                        <h6>@jadbox</h6>
+                    </a>
+
+                    <p>VS Code will have deep remote development. You can connect to a container running a different
+                        OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                </div>
+            </div>
+
+            <div class="__content">
+                <img src="https://via.placeholder.com/60x60" alt="">
+
+                <div class="__comments">
+                    <a class="hover:text-blue-400" href="#">
+                        <h5>Pavithra Kodmad</h5>
+                        <h6>@PKodmad</h6>
+                    </a>
+
+                    <p>VS Code is my most used and favorite editor. I love being able to customize the editor -
+                        changing the layout, the icons, fonts and color scheme is so easy!</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="__content">
+                <img class="rounded" src="/images/person-4.jpg" width="60" height="60" />
+
+                <div class="__comments">
+                    <a class="hover:text-blue-400" href="#">
+                        <h5>Una Kravets</h5>
+                        <h6>@una</h6>
+                    </a>
+
+                    <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing
+                        workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                </div>
+            </div>
+
+            <div class="__content">
+                <img src="https://via.placeholder.com/60x60" alt="">
+
+                <div class="__comments">
+                    <a class="hover:text-blue-400" href="#">
+                        <h5>Jonathan Dunlap</h5>
+                        <h6>@jadbox</h6>
+                    </a>
+
+                    <p>VS Code will have deep remote development. You can connect to a container running a different
+                        OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                </div>
+            </div>
+
+            <div class="__content">
+                <img src="https://via.placeholder.com/60x60" alt="">
+
+                <div class="__comments">
+                    <a class="hover:text-blue-400" href="#">
+                        <h5>Pavithra Kodmad</h5>
+                        <h6>@PKodmad</h6>
+                    </a>
+
+                    <p>VS Code is my most used and favorite editor. I love being able to customize the editor -
+                        changing the layout, the icons, fonts and color scheme is so easy!</p>
+                </div>
+            </div>
+        </div>
+      </div> -->
+
     <section class="challenge">
         <!-- no container, input css ONE CLASS-->
-        <div class="props-1">
-            <div class="container">
-                <img src="/images/props-1.svg" width="275" height="200" />
-                <h4>Deploy with confidence and ease</h4>
+        <div class="props-1 p-5">
+            <div class="container p-4 grid grid-rows-2 lg:flex lg:flex-cols-2 lg:gap-40 ">
+                <div class="flex justify-center">
+                    <img class="lg:w-[43rem] lg:h-[20rem]" src="/images/props-1.svg" width="275" height="200" />
+                </div>
 
-                <p> With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!)
-                    sites, store and query relational and document based data, and scale with serverless computing, all
-                    with ease, all from within VS Code.</p>
+                <div class="lg:justify-end lg:pt-6">
+                    <h4 class="font-light text-lg py-4 lg:text-3xl text-justify">Meet IntelliSense.</h4>
+
+                    <p class="leading-9 text-start py-2"> Go beyond syntax highlighting and autocomplete with
+                        IntelliSense,
+                        which provides smart completions based on variable types,
+                        function definitions, and imported modules.</p>
+                </div>
             </div>
         </div>
-
-        <div class="props-2 bg-[#f5f5f5]">
-
-            <div class="container">
-                <div class="val">
-                    <img src="/images/props-2.svg" width="275" height="200" />
+        <div class="props-2 p-5 bg-[#f5f5f5]">
+            <div class="container p-4 grid grid-rows-2 lg:flex lg:flex-row-reverse lg:gap-40 ">
+                <div class="flex justify-center">
+                    <img class="lg:w-[35rem] lg:h-[20rem]" src="/images/props-2.svg" width="275" height="200" />
                 </div>
-                <h4>Deploy with confidence and ease</h4>
+                <div class=" lg:pt-6">
+                    <h4 class="font-light text-lg py-4 lg:text-2xl">Print statement debugging is a thing of the past.
+                    </h4>
 
-                <p> With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!)
-                    sites, store and query relational and document based data, and scale with serverless computing, all
-                    with ease, all from within VS Code.</p>
+                    <p class="leading-9 text-start py-2">Debug code right from the editor. Launch or attach to your
+                        running apps and debug with break points, call stacks, and an interactive console.</p>
+                </div>
+
             </div>
         </div>
-
-        <div class="props-3">
-
-            <div class="container">
-                <div class="val">
-                    <img src="/images/props-3.svg" width="275" height="200" />
+        <div class="props-3 p-5">
+            <div class="container p-4 grid grid-rows-2 lg:flex lg:flex-cols-2 lg:gap-40 ">
+                <div class="flex justify-center">
+                    <img class="lg:w-[43rem] lg:h-[20rem]" src="/images/props-3.svg" width="275" height="200" />
                 </div>
-                <h4>Deploy with confidence and ease</h4>
 
-                <p> With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!)
-                    sites, store and query relational and document based data, and scale with serverless computing, all
-                    with ease, all from within VS Code.</p>
+                <div class="lg:justify-end lg:pt-6">
+                    <h4 class="font-light text-lg py-4 lg:text-3xl text-justify">Git commands built-in.</h4>
+
+                    <p class="leading-9 text-start py-2">Working with Git and other SCM providers has never been easier.
+                        Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted
+                        SCM service.</p>
+                </div>
             </div>
         </div>
-
-        <div class="props-4 bg-[#f5f5f5]">
-
-            <div class="container">
-                <div class="val">
-                    <img src="/images/props-4.png" width="275" height="200" />
+        <div class="props-4 p-5 bg-[#f5f5f5]">
+            <div class="container p-4 grid grid-rows-2 lg:flex lg:flex-row-reverse lg:gap-40 ">
+                <div class="flex justify-center hover:scale-105">
+                    <img class="lg:w-[55rem] lg:h-[15rem]" src="/images/props-4.png" width="275" height="100" />
                 </div>
-                <h4>Deploy with confidence and ease</h4>
+                <div class="lg:justify-end lg:pt-6">
+                    <h4 class="font-light text-lg py-4 lg:text-3xl text-justify">Extensible and customizable.</h4>
 
-                <p> With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!)
-                    sites, store and query relational and document based data, and scale with serverless computing, all
-                    with ease, all from within VS Code.</p>
+                    <p class="leading-9 text-start py-2 text-base">Want even more features? Install extensions to add
+                        new languages, themes, debuggers, and to connect to additional services. Extensions run in
+                        separate processes, ensuring they won't slow down your editor.
+                        <a href="#" class="text-blue-500 hover:underline no-underline">
+                            Learn more about extensions.</a>
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="props-5">
-
-            <div class="container">
-                <div class="val">
-                    <img src="/images/props-5.svg" width="275" height="200" />
+        <div class="props-5 p-5">
+            <div class="container p-4 grid grid-rows-2 lg:flex lg:flex-cols-2 lg:gap-40 ">
+                <div class="flex justify-center">
+                    <img class="lg:w-[55rem] lg:h-[20rem]" src="/images/props-5.svg" width="275" height="200" />
                 </div>
-                <h4>Deploy with confidence and ease</h4>
 
-                <p> With Microsoft Azure you can deploy and host your React, Angular, Vue, Node, Python (and more!)
-                    sites, store and query relational and document based data, and scale with serverless computing, all
-                    with ease, all from within VS Code.</p>
+                <div class="lg:justify-end lg:pt-6">
+                    <h4 class="font-light text-lg py-4 lg:text-3xl text-justify">Meet IntelliSense.</h4>
+
+                    <p class="leading-9 text-start py-2">With <a href="#"
+                            class="text-blue-500 hover:underline no-underline">
+                            Microsoft Azure</a>
+                        you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and
+                        query relational and document based data, and scale with serverless computing, all with ease,
+                        <a href="#" class="text-blue-500 hover:underline no-underline">
+                            all from within VS Code.</a>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="code bg-[#f5f5f5] py-10 px-3">
+    <section class="code bg-[#f5f5f5] py-10 px-3">
         <div class="container">
             <div class="text-center">
                 <h3 class="p-8 text-lg lg:text-4xl lg:font-light">VS Code for</h3>
@@ -310,7 +532,8 @@
                     </div>
                 </div>
 
-                <div class="p-6 lg:text-lg lg:p-0 lg:pb-9"> <a class=" hover:underline text-[#0066B8] hover:text-[#0a416e]" href="#">and many more
+                <div class="p-6 lg:text-lg lg:p-0 lg:pb-9"> <a
+                        class=" hover:underline text-[#0066B8] hover:text-[#0a416e]" href="#">and many more
                         languages on the
                         Marketplace...</a></div>
 
@@ -323,7 +546,7 @@
 
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="software">
         <div class="container">
@@ -515,21 +738,6 @@
         </div>
     </section>
 
-    <!-- <div class="grid grid-cols-2 gap-4 lg:grid-cols-6">
-        <div>01</div>
-        <div>02</div>
-        <div>03</div>
-        <div>04</div>
-        <div>05</div>
-        <div>06</div>
-        <div>07</div>
-        <div>08</div>
-        <div>09</div>
-        <div>10</div>
-        <div>11</div>
-        <div>12</div>
-      </div> -->
-
     <section class="terms bg-[#f5f5f5]">
         <div class="container">
             <div class="p-8">
@@ -551,28 +759,19 @@
                     </div>
 
                 </div>
-            
 
-                <div class="p-9 content grid grid-row place-content-center text-center">
 
-                    <h6 class="p-2 text-sm font-semibold">License and Privacy Terms</h6>        
+                <div class="content grid grid-row place-content-center text-center">
 
-                    <div class="mx-5 text-center ">
-                        <div class="container lg:px-52">
-                            <h6 class="text-xs flex justify-center max-w-screen-2xl leading-9 lg:leading-9">By downloading and using Visual
-                                Studio Code, you agree
-                                to the ///// and ///// VS Code automatically sends telemetry data and
-                                crash dumps to help us improve the product. If you would prefer not to have this data sent
-                                please go see ////// to learn how to disable it.</h6>
-                                <div class=" hover:underline text-[#0066B8] hover:text-[#0a416e]" href="#">license terms
-                                </div>
-                                
-                                <div><a class=" hover:underline text-[#0066B8] hover:text-[#0a416e]" href="#">
-                                privacy statement.</a></div>
-                                
-                                <div><a class=" hover:underline text-[#0066B8] hover:text-[#0a416e]" href="#">
-                                How to Disable Crash Reporting</a></div>
-                        </div>
+                    <div class="max-w-[50%] mx-auto py-[3rem]">
+                        <h3 class="text-sm font-semibold">License and Privacy Terms</h3>
+                        <p class="text-xs leading-7">By downloading and using Visual Studio
+                            Code, you agree to the <a href="#" class="text-[#0066b8] hover:underline">
+                                license and terms</a> and <a href="#" class="text-[#0066b8] hover:underline">
+                                privacy statement.</a> VS Code automatically sends telemetry data and crash dumps
+                            to help us improve the product. If you would prefer not to have this data sent
+                            please go see <a href="#" class="text-[#0066b8] hover:underline">How to Disable
+                                Crash Reporting</a> to learn how to disable it.</p>
                     </div>
                 </div>
             </div>
@@ -611,7 +810,9 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./script.js"></script>
+
 </body>
 
 </html>
-

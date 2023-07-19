@@ -8,15 +8,18 @@
 
 @layer components {
     .header__nav{
-        @apply w-[100vw] h-[0vh] absolute left-0 flex-col justify-start items-start overflow-hidden;
+        @apply w-[100vw] h-[0vh] absolute top-10 left-0 flex-col justify-start items-start overflow-hidden;
     }
 
     .header__nav.open{
-        @apply h-[100vh];
+        @apply h-[100vh] lg:hidden;
     }
 
-    
 }
+
+
+
+
 
 
 
