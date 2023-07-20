@@ -3,23 +3,36 @@
 @tailwind utilities;
 
 .container {
-    @apply mx-auto max-w-[1200px] w-full;
+  @apply mx-auto max-w-[1200px] w-full;
 }
 
 @layer components {
-    .header__nav{
-        @apply w-[100vw] h-[0vh] absolute top-10 left-0 flex-col justify-start items-start overflow-hidden;
-    }
+  .header__nav {
+    @apply z-50 w-[100vw] h-[0vh] absolute top-10 left-0 flex-col justify-start items-start overflow-hidden duration-[.6s]  lg:overflow-y-hidden  lg:static lg:h-auto;
+  }
 
-    .header__nav.open{
-        @apply h-[100vh] lg:hidden;
-    }
+  .header__nav.open {
+    @apply h-[32vh] lg:hidden duration-[.6s] overflow-y-scroll;
+  }
 
+  .platform {
+    @apply before:content-[""] before:relative before:border-l-[15px] 
+        before:border-r-[15px] before:border-b-[15px] 
+        before:border-solid before:border-transparent 
+        before:left-[234px] before:bottom-[36px]
+         before:border-b-[#25252b] lg:before:left-[235px];
+  }
+
+    
 }
+.tns-outer {
+      @apply relative;
+  }
 
+  .tns-controls {
+      @apply flex items-center justify-between absolute top-[12rem] right-[1px] w-[24.3rem] z-20;
+  }
 
-
-
-
-
-
+  .tns-controls button {
+      @apply text-[30px] text-[#777];
+  }

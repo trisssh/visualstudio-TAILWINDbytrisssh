@@ -13,55 +13,18 @@
 </head>
 
 <body>
-    <!-- <section class="header">
-        <div class="container">
-            <nav class="">
-                <div class="VSlogo flex gap-3 p-3">
-                <a href="#"><img src="/images/logo-vs.png" width="25" height="25" /></a>
-                    <h3 class="font-semibold text-xl">Visual Studio Code</h3>
-                </div>
 
-                <div class="header__nav lg:static lg:h-auto">
-                    <ul class="flex flex-col justify-end lg:flex-row gap-4">                       
-                        <li><a href="#">Docs</a></li>
-                        <li><a href="#">Updates</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">Extensions</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Learn</a></li>
-    
-                        <li><a href="#">Search</a></li>
-                        <li><a href="#">Download</a></li>
-                    </ul>
-                </div>
-            
-                <div class="pt-2">
-                   
+    <header class="header bg-[#2c2c32] lg:px-40 z-50">
 
-                    <div class="hover:bg-[#0066B8] hover:cursor-pointer px-3 pt-3 py-2 rounded-md">
-                        <button class="toggle-menu flex flex-col border-none self-center background-transparent z-50 lg:hidden">
-                            <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
-                            <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
-                            <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
-
-                        </button>
-                    </div>
-                    
-                </div>
-            </nav>
-        </div>
-    </section> -->
-    <header class="header bg-black lg:px-40">
         <div class="container ">
-            <nav class="header__wrapper flex justify-between lg:inline-flex  px-3">
+            <nav class="header__wrapper flex justify-between px-3">
 
                 <!-- <div class="branding__header gap-2 m-2 ">
                     <a href="#"><img src="/images/logo-vs.png" width="25" height="25" /></a>
                     <h3 class="font-semibold text-xl text-white">Visual Studio Code</h3>
                 </div> -->
 
-                <div class="VSlogo flex whitespace-nowrap gap-2 p-2 lg:flex-none">
+                <div class="VSlogo flex whitespace-nowrap gap-2 p-2 lg:pt-4 lg:flex-none">
                     <div>
                         <a class="lg:height-[52rem] lg:width-[52rem]" href="#"><img src="/images/logo-vs.png" width="25"
                                 height="25" /></a>
@@ -73,31 +36,32 @@
 
                 </div>
 
-                <div class="header__nav lg:static lg:h-auto">
+                <div class="header__nav ">
 
-                    <ul class="lg:flex lg:justify-between lg:gap-5 bg-black gap-1 p-3 text-gray-400 ">
-                        <div class="lg:flex gap-2">
-                            <li><a href="#">Docs</a></li>
-                            <li><a href="#">Updates</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">API</a></li>
-                            <li><a href="#">Extensions</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Learn</a></li>
+                    <ul class="lg:flex lg:justify-between bg-[#2c2c32] gap-5 p-3">
+                        <div class="flex flex-col lg:flex-row lg:gap-0 lg:pt-2 gap-3">
+                            <li><a class="hover:text-white text-gray-400 px-2" href="#">Docs</a></li>
+                            <li><a class="hover:text-white text-gray-400 px-2" href="#">Updates</a></li>
+                            <li><a class="hover:text-white text-gray-400 px-2" href="#">Blog</a></li>
+                            <li><a class="hover:text-white text-gray-400 px-2" href="#">API</a></li>
+                            <li><a class="hover:text-white text-gray-400 px-2" href="#">Extensions</a></li>
+                            <li><a class="hover:text-white text-gray-400 px-2" href="#">FAQ</a></li>
+                            <li><a class="hover:text-white text-gray-400 px-2" href="#">Learn</a></li>
+                            <li><a class="hover:text-white text-gray-400 px-2 lg:hidden" href="#">Search</a></li>
                         </div>
 
-                        <div class="header__dalwa flex gap-2">
+                        <div class="header__dalwa lg:flex gap-x-0.5">
+                            
                             <li>
-
-                                <div
-                                    class="py-2  btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] px-4 text-white text-center">
-                                    <h3 class="text-base font-extralight flex justify-center gap-2"> <img
-                                            src="/images/search (1).svg" width="17" height="17" />Search Docs</h3>
-                                </div>
+                                <div class="inputGroup lg:flex lg:items-center">
+                                <div class="hidden lg:flex relative left-6"><img src="/images/search (1).svg" width="16" height="16" /></div>
+                                <input class="hidden  lg:flex py-2 px-8 w-40 bg-[#3D3D42]" type="email" placeholder="Search Docs" />
+                            </div>
                             </li>
+
                             <li>
                                 <div
-                                    class="py-2  btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] px-4 text-white text-center">
+                                    class="py-2 btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] px-4 text-white text-center">
                                     <h3 class="text-base font-semibold flex justify-center gap-2"> <img
                                             src="/images/dl-iconWHITE.svg" width="17" height="17" />Download</h3>
                                 </div>
@@ -115,12 +79,10 @@
                     <span class="w-5 h-0.5 block cursor-pointer mb-1 bg-white"></span>
 
                 </button>
-
+ 
             </nav>
         </div>
     </header>
-
-
 
     <div class="update bg-[#25252B] px-9 py-2">
         <h3 class="text-center text-white"><a href="#" class="px-1 text-blue-500 underline hover:no-underline">Version
@@ -143,6 +105,7 @@
 
 
                     <div class="flex justify-center p-4 gap-1">
+
                         <div
                             class="py-2  btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] w-60 h-14 text-white text-center">
                             <h3 class="text-base font-semibold flex justify-center gap-2"> <img
@@ -150,18 +113,42 @@
                             <p class="text-xs pb-2">Stable Build</p>
                         </div>
                         <div
-                            class="py-2 btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] w-10 h-14 text-white text-center">
+                            class="dropdown-menu py-2 btn-blue cursor-pointer bg-[#0066B8] hover:bg-[#0a416e] w-10 h-14 text-white text-center">
                             <h3 class="text-base font-semibold flex justify-center gap-2"><i
                                     class="pt-[11px] fa-solid fa-chevron-down text-xl"></i></h3>
+
+                                    
                         </div>
+
+                        <!-- <div class="dropdown__nav lg:static lg:h-auto">
+
+                            <ul class="lg:flex lg:justify-between bg-[#2c2c32] gap-5 p-3">
+                                <div class="lg:flex lg:gap-0 lg:pt-2">
+                                    <li><a class="hover:text-white text-gray-400 px-2" href="#">Docs</a></li>
+                                    <li><a class="hover:text-white text-gray-400 px-2" href="#">Updates</a></li>
+                                    <li><a class="hover:text-white text-gray-400 px-2" href="#">Blog</a></li>
+                                    <li><a class="hover:text-white text-gray-400 px-2" href="#">API</a></li>
+                                    <li><a class="hover:text-white text-gray-400 px-2" href="#">Extensions</a></li>
+                                    <li><a class="hover:text-white text-gray-400 px-2" href="#">FAQ</a></li>
+                                    <li><a class="hover:text-white text-gray-400 px-2" href="#">Learn</a></li>
+                                    <li><a class="hover:text-white text-gray-400 px-2 lg:hidden" href="#">Search</a></li>
+                                </div>
+        
+                            </ul>
+        
+                        </div> -->
                     </div>
 
-
-                    <h6 class="text-sm bg-violet-950 text-gray-400">
-                        <a href="#" class="text-blue-500 hover:underline no-underline">Web,</a>
-                        <a href="#" class="text-blue-500 hover:underline no-underline"> Insiders edition,</a>
-                        or<a href="#" class="text-blue-500 hover:underline no-underline"> other plans</a>
-                    </h6>
+                    <!-- platform -->
+                    <div class="flex justify-center">
+                        <div class="bg-[#25252b] rounded w-72 h-8">
+                            <h6 class="platform text-[13px] text-gray-400 pt-2 pr-4">
+                                <a href="#" class="text-blue-500 hover:underline no-underline">Web,</a>
+                                <a href="#" class="text-blue-500 hover:underline no-underline"> Insiders edition,</a>
+                                or <a href="#" class="text-blue-500 hover:underline no-underline">other plans</a>
+                            </h6>
+                        </div>
+                    </div>                  
 
                     <h5 class="text-xs text-gray-400 p-3">
                         By using VS Code, you agree to its<div><a href="#"
@@ -206,187 +193,126 @@
         </div>
     </section>
 
-    <!-- slider--reviews -->
+<!-- 
+    <a class="text-blue-400 hover:underline" href="#">@code</a>
+    <img src="https://via.placeholder.com/60x60" alt="">
+    <img class="rounded" src="/images/person-4.jpg" width="60" height="60" /> -->
+
+
     <section class="testimonials bg-[#f5f5f5]">
-        <div class="container">
-            <div>
-                <div class="__content">
-                    <img class="rounded" src="/images/person-4.jpg" width="60" height="60" />
-
-                    <div class="__comments">
-                        <a class="hover:text-blue-400" href="#">
-                            <h5>Una Kravets</h5>
-                            <h6>@una</h6>
-                        </a>
-
-                        <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing
-                            workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+        <div class="container p-14">
+            <div class="reviews__slider">
+                <div class="item lg:grid lg:grid-cols-3">
+                    <div class="item__content flex gap-2 py-3 px-2">
+                        <div class="grid grid-flow-col">
+                            <div class="">
+                                <img class="rounded-full" src="/images/person-4.jpg" width="250" height="200" />
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        <div class="items__comments">
+                            <a href="#">
+                                <h5 class="hover:text-blue-400 font-bold text-xs" >Una Kravets</h5>
+                                <h6 class="text-[10px] text-gray-400">@Una</h6>
+                            </a>
+                            
+                            
+                            <p class="text-start text-[15px]">VS <a class="text-blue-400 hover:underline" href="#">@code</a> does so many things right. I'm constantly impressed by the UX, and customizing
+                                workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                        </div>
+                    </div>
+                    <div class="item__content flex gap-2 py-3 px-2">
+                        <div class="grid grid-flow-col">
+                            <div class="">
+                                <img class="rounded-full" src="https://via.placeholder.com/60x60" width="250" height="200" />
+                            </div>
+                        </div>
+                      
+                        <div class="items__comments">
+                            <a href="#">
+                                <h5 class="hover:text-blue-400 font-bold text-xs" >Jonathan Dunlap</h5>
+                                <h6 class="text-[10px] text-gray-400">@jadbox</h6>
+                            </a>
+        
+                            <p class="text-start text-[15px]">VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                        </div>
+                    </div>
+                    <div class="item__content flex gap-2 py-3 px-2">
+                        <div class="grid grid-flow-col">
+                            <div class="">
+                                <img class="rounded-full" src="/images/person-3.jpg" width="250" height="200" />
+                            </div>
+                        </div>
+                      
+                        <div class="items__comments">
+                            <a href="#">
+                                <h5 class="hover:text-blue-400 font-bold text-xs" >Pavithra Kodmad</h5>
+                                <h6 class="text-[10px] text-gray-400">@PKodmad</h6>
+                            </a>
+        
+                            <p class="text-start text-[15px]">VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="__content">
-                    <img src="https://via.placeholder.com/60x60" alt="">
-
-                    <div class="__comments">
-                        <a class="hover:text-blue-400" href="#">
-                            <h5>Jonathan Dunlap</h5>
-                            <h6>@jadbox</h6>
-                        </a>
-
-                        <p>VS Code will have deep remote development. You can connect to a container running a different
-                            OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                <div class="item lg:grid lg:grid-cols-3">
+                    <div class="item__content flex gap-2 py-3 px-2">
+                        <div class="grid grid-flow-col">
+                            <div class="">
+                                <img class="rounded-full" src="/images/person-2.jpg" width="250" height="200" />
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        <div class="items__comments">
+                            <a href="#">
+                                <h5 class="hover:text-blue-400 font-bold text-xs" >Darren</h5>
+                                <h6 class="text-[10px] text-gray-400">@MrDarrenV</h6>
+                            </a>
+                            
+                            
+                            <p class="text-start text-[15px]">VS <a class="text-blue-400 hover:underline" href="#">@code</a> does so many things right. I'm constantly impressed by the UX, and customizing
+                                workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="__content">
-                    <img src="https://via.placeholder.com/60x60" alt="">
-
-                    <div class="__comments">
-                        <a class="hover:text-blue-400" href="#">
-                            <h5>Pavithra Kodmad</h5>
-                            <h6>@PKodmad</h6>
-                        </a>
-
-                        <p>VS Code is my most used and favorite editor. I love being able to customize the editor -
-                            changing the layout, the icons, fonts and color scheme is so easy!</p>
+                    <div class="item__content flex gap-2 py-3 px-2">
+                        <div class="grid grid-flow-col">
+                            <div class="">
+                                <img class="rounded-full" src="https://via.placeholder.com/60x60" width="250" height="200" />
+                            </div>
+                        </div>
+                      
+                        <div class="items__comments">
+                            <a href="#">
+                                <h5 class="hover:text-blue-400 font-bold text-xs" >Cassidy Williams</h5>
+                                <h6 class="text-[10px] text-gray-400">@cassidoo</h6>
+                            </a>
+        
+                            <p class="text-start text-[15px]">I was a vim fan, but then discovered VS Code's Vim plugin, which lets me add in my vim keybindings. I can maintain my coding style without having to compromise on speed.</p>
+                        </div>
+                    </div>
+                    <div class="item__content flex gap-2 py-3 px-2">
+                        <div class="grid grid-flow-col">
+                            <div class="">
+                                <img class="rounded-full" src="/images/person-1.jpg" width="250" height="200" />
+                            </div>
+                        </div>
+                      
+                        <div class="items__comments">
+                            <a href="#">
+                                <h5 class="hover:text-blue-400 font-bold text-xs" >Jonathan Dunlap</h5>
+                                <h6 class="text-[10px] text-gray-400">@jadbox</h6>
+                            </a>
+        
+                            <p class="text-start text-[15px]">I love <a class="text-blue-400 hover:underline" href="#">@code</a> The built-in markdown previewer is awesome and the plugin system allows me to use GitLens, which makes my workflow so much easier.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!-- <div class="my-slider">
-        <div>
-            <div class="__content">
-                <img class="rounded" src="/images/person-4.jpg" width="60" height="60" />
-
-                <div class="__comments">
-                    <a class="hover:text-blue-400" href="#">
-                        <h5>Una Kravets</h5>
-                        <h6>@una</h6>
-                    </a>
-
-                    <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing
-                        workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
-                </div>
-            </div>
-
-            <div class="__content">
-                <img src="https://via.placeholder.com/60x60" alt="">
-
-                <div class="__comments">
-                    <a class="hover:text-blue-400" href="#">
-                        <h5>Jonathan Dunlap</h5>
-                        <h6>@jadbox</h6>
-                    </a>
-
-                    <p>VS Code will have deep remote development. You can connect to a container running a different
-                        OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
-                </div>
-            </div>
-
-            <div class="__content">
-                <img src="https://via.placeholder.com/60x60" alt="">
-
-                <div class="__comments">
-                    <a class="hover:text-blue-400" href="#">
-                        <h5>Pavithra Kodmad</h5>
-                        <h6>@PKodmad</h6>
-                    </a>
-
-                    <p>VS Code is my most used and favorite editor. I love being able to customize the editor -
-                        changing the layout, the icons, fonts and color scheme is so easy!</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="__content">
-                <img class="rounded" src="/images/person-4.jpg" width="60" height="60" />
-
-                <div class="__comments">
-                    <a class="hover:text-blue-400" href="#">
-                        <h5>Una Kravets</h5>
-                        <h6>@una</h6>
-                    </a>
-
-                    <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing
-                        workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
-                </div>
-            </div>
-
-            <div class="__content">
-                <img src="https://via.placeholder.com/60x60" alt="">
-
-                <div class="__comments">
-                    <a class="hover:text-blue-400" href="#">
-                        <h5>Jonathan Dunlap</h5>
-                        <h6>@jadbox</h6>
-                    </a>
-
-                    <p>VS Code will have deep remote development. You can connect to a container running a different
-                        OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
-                </div>
-            </div>
-
-            <div class="__content">
-                <img src="https://via.placeholder.com/60x60" alt="">
-
-                <div class="__comments">
-                    <a class="hover:text-blue-400" href="#">
-                        <h5>Pavithra Kodmad</h5>
-                        <h6>@PKodmad</h6>
-                    </a>
-
-                    <p>VS Code is my most used and favorite editor. I love being able to customize the editor -
-                        changing the layout, the icons, fonts and color scheme is so easy!</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="__content">
-                <img class="rounded" src="/images/person-4.jpg" width="60" height="60" />
-
-                <div class="__comments">
-                    <a class="hover:text-blue-400" href="#">
-                        <h5>Una Kravets</h5>
-                        <h6>@una</h6>
-                    </a>
-
-                    <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing
-                        workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
-                </div>
-            </div>
-
-            <div class="__content">
-                <img src="https://via.placeholder.com/60x60" alt="">
-
-                <div class="__comments">
-                    <a class="hover:text-blue-400" href="#">
-                        <h5>Jonathan Dunlap</h5>
-                        <h6>@jadbox</h6>
-                    </a>
-
-                    <p>VS Code will have deep remote development. You can connect to a container running a different
-                        OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
-                </div>
-            </div>
-
-            <div class="__content">
-                <img src="https://via.placeholder.com/60x60" alt="">
-
-                <div class="__comments">
-                    <a class="hover:text-blue-400" href="#">
-                        <h5>Pavithra Kodmad</h5>
-                        <h6>@PKodmad</h6>
-                    </a>
-
-                    <p>VS Code is my most used and favorite editor. I love being able to customize the editor -
-                        changing the layout, the icons, fonts and color scheme is so easy!</p>
-                </div>
-            </div>
-        </div>
-      </div> -->
 
     <section class="challenge">
         <!-- no container, input css ONE CLASS-->
@@ -784,12 +710,13 @@
         <div class="container ">
             <div class="gap-5 lg:flex justify-between text-white p-4">
                 <div class="flex gap-6 p-3">
+                    <h4 class="text-sm hover:text-violet-400 hidden lg:flex"><a href="#">Hello from Seattle.</a></h4>
                     <h4 class="text-sm hover:text-violet-400"><a href="#">Follow @code</a></h4>
 
                     <div>
-                        <a class="text-black font-semibold text-[10px] bg-slate-50 hover:bg-slate-200 rounded-md px-2 py-1"
+                        <a class=" text-black font-semibold text-[10px] bg-slate-50 hover:bg-slate-200 rounded-md px-2 py-1"
                             href="#">@ Star</a>
-                        <a class="text-black font-semibold text-[10px] hover:text-sky-500 bg-slate-100 hover:bg-slate-300 rounded-md px-2 py-1"
+                        <a class="footer__tusok text-black bef font-semibold text-[10px] hover:text-sky-500 bg-slate-100 hover:bg-slate-300 rounded-md px-2 py-1"
                             href="#">148,239</a>
                     </div>
                 </div>
@@ -814,5 +741,4 @@
     <script src="./script.js"></script>
 
 </body>
-
 </html>
