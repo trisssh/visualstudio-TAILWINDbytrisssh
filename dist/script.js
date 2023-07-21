@@ -9,11 +9,11 @@ toggle.addEventListener('click', () => {
 
 ///////////////////////////////////////////////////////////
 const dropdown = document.querySelector('.dropdown-menu');
-const drop = document.querySelector('.dropdown__nav');
+const bot = document.querySelector('.dropdown__nav');
 
 dropdown.addEventListener('click', () => {
     dropdown.classList.dropdown('open');
-    drop.classList.dropdown('open');
+    bot.classList.dropdown('open');
 })
 //////////////////////////////////////////////////////
 

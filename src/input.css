@@ -5,14 +5,17 @@
 .container {
   @apply mx-auto max-w-[1200px] w-full;
 }
+.container-2 {
+  @apply mx-auto max-w-[1500px] w-full;
+}
 
 @layer components {
   .header__nav {
-    @apply z-50 w-[100vw] h-[0vh] absolute top-10 left-0 flex-col justify-start items-start overflow-hidden duration-[.6s]  lg:overflow-y-hidden  lg:static lg:h-auto;
+    @apply z-50 w-[100vw] max-h-[0vh] absolute top-10 left-0 flex-col justify-start duration-[.7s] items-start lg:static lg:max-h-fit lg:overflow-visible overflow-hidden;
   }
 
   .header__nav.open {
-    @apply h-[32vh] lg:hidden duration-[.6s] overflow-y-scroll;
+    @apply max-h-[31vh] duration-[.7s] transition-all w-full overflow-y-scroll lg:h-auto lg:overflow-y-hidden;
   }
 
   .platform {
@@ -23,16 +26,24 @@
          before:border-b-[#25252b] lg:before:left-[235px];
   }
 
-    
+  .dropdown__nav {
+    @apply z-50 w-[100vw] max-h-[0vh] absolute top-10 left-0 flex-col justify-start duration-[.7s] items-start lg:static overflow-hidden;
+  }
+
+  .dropdown__nav.open {
+    @apply max-h-[31vh] duration-[.7s] transition-all w-full overflow-y-scroll lg:h-auto lg:overflow-y-hidden;
+  }
 }
+
+
 .tns-outer {
-      @apply relative;
-  }
+  @apply relative;
+}
 
-  .tns-controls {
-      @apply flex items-center justify-between absolute top-[12rem] right-[1px] w-[24.3rem] z-20;
-  }
+.tns-controls {
+  @apply flex items-center justify-between absolute top-[40%] min-w-full z-20 lg:top-[4rem];
+}
 
-  .tns-controls button {
-      @apply text-[30px] text-[#777];
-  }
+.tns-controls button {
+  @apply text-[30px] text-[#777];
+}
